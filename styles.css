@@ -1,2 +1,52 @@
+body {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+}
 
-/* Your CSS Code here. */
+.player {
+  max-width: 750px;
+  border: 1px solid #555;
+}
+
+.viewer {
+  width: 100%;
+  display: block;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #222;
+}
+
+.player__button {
+  background: none;
+  border: 0;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.progress {
+  flex: 1;
+  height: 6px;
+  background: #555;
+  cursor: pointer;
+  display: flex;
+}
+
+.progress__filled {
+  background: #ffc600;
+  flex-basis: 0%;
+}
+
+input[type="range"] {
+  width: 100px;
+}
